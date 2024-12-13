@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Men Fashion</title>
+    <link rel="stylesheet" href="section.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html" class="nav-link">Home</a></li>
+                <li><a href="men.html" class="nav-link">Men</a></li>
+                <li><a href="women.html" class="nav-link">Women</a></li>
+                <li><a href="kids.html" class="nav-link">Kids</a></li>
+                <li><a href="cart.html" class="nav-link">Cart <span id="cart-count">0</span></a></li>
+                <li><a href="myaccount.html" class="nav-link">My Account</a></li>
+            </ul>
+            <!-- Simple Search Bar -->
+            <div class="search-container">
+                <input type="text" id="search" class="search-bar" placeholder="Search for products...">
+                <button id="search-button" class="search-button">Search</button>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="banner">
+            <h1>Men's Fashion</h1>
+            <p>Shop the latest styles in men's fashion.</p>
+        </section>
+
+        <section class="products">
+            <div class="product">
+                <img src="men-product1.jpg" alt="Men's Shirt">
+                <h4>Men's Casual Shirt</h4>
+                <p class="price">$49.99</p>
+                <button onclick="addToCart('Men\'s Casual Shirt', 49.99)">Add to Cart</button>
+            </div>
+            <div class="product">
+                <img src="men-product2.jpg" alt="Men's Jeans">
+                <h4>Men's Slim Fit Jeans</h4>
+                <p class="price">$79.99</p>
+                <button onclick="addToCart('Men\'s Casual Shirt', 49.99)">Add to Cart</button>
+            </div>
+            <div class="product">
+                <img src="men-product3.jpg" alt="Men's Jacket">
+                <h4>Men's Winter Jacket</h4>
+                <p class="price">$129.99</p>
+                <button onclick="addToCart('Men\'s Casual Shirt', 49.99)">Add to Cart</button>
+            </div>
+            <div class="product">
+                <img src="men-product4.jpg" alt="Men's Shoes">
+                <h4>Men's Leather Shoes</h4>
+                <p class="price">$89.99</p>
+                <button onclick="addToCart('Men\'s Casual Shirt', 49.99)">Add to Cart</button>
+            </div>
+        </section>
+
+        <footer>
+            <ul>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Privacy Policy</a></li>
+                <li><a href="contactus.html">Contact</a></li>
+            </ul>
+        </footer>
+    </main>
+</body>
+</html>

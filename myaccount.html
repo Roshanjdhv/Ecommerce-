@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Account</title>
+    <link rel="stylesheet" href="myaccount.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="men.html">Men</a></li>
+                <li><a href="women.html">Women</a></li>
+                <li><a href="kids.html">Kids</a></li>
+                <li><a href="sale.html">Sale</a></li>
+                <li><a href="cart.html">Cart</a></li>
+                <li><a href="account.html">My Account</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="my-account">
+            <h2>My Account</h2>
+
+            <!-- Account Container -->
+            <div class="account-container">
+                <!-- Sidebar Navigation -->
+                <aside class="account-sidebar">
+                    <h3>Account Settings</h3>
+                    <ul>
+                        <li><a href="#" class="tab active-tab">Account Information</a></li>
+                        <li><a href="#" class="tab">Order History</a></li>
+                        <li><a href="#" class="tab">Address Book</a></li>
+                        <li><a href="#" class="tab">Payment Methods</a></li>
+                    </ul>
+                </aside>
+
+                <!-- Account Info Section -->
+                <div class="account-info">
+                    <h3>Account Information</h3>
+                    <div class="profile-pic-container">
+                        <img src="profile-pic.jpg" alt="Profile Picture">
+                        <input type="file" id="profilePic" />
+                        <label for="profilePic" class="upload-btn">Change Picture</label>
+                    </div>
+                    <p><strong>Name:</strong> John Doe</p>
+                    <p><strong>Email:</strong> john.doe@example.com</p>
+                    <p><strong>Phone:</strong> +123 456 7890</p>
+                    <button class="account-button">Save Changes</button>
+                </div>
+
+                <!-- Order History Section -->
+                <div class="account-orders">
+                    <h3>Order History</h3>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Order ID</th>
+                                <th>Date</th>
+                                <th>Total</th>
+                                <th>Status</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>#12345</td>
+                                <td>2024-12-10</td>
+                                <td>$150.00</td>
+                                <td>Shipped</td>
+                            </tr>
+                            <tr>
+                                <td>#12346</td>
+                                <td>2024-12-05</td>
+                                <td>$75.00</td>
+                                <td>Delivered</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <ul>
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">Privacy Policy</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+        <p>&copy; 2024 Fashion eCommerce | All Rights Reserved</p>
+    </footer>
+</body>
+</html>

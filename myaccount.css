@@ -1,0 +1,271 @@
+ /* My Account Page Advanced Styles */
+.my-account {
+    padding: 50px 20px;
+    background-color: #f4f4f4;
+    min-height: 100vh;
+}
+
+.my-account h2 {
+    text-align: center;
+    font-size: 32px;
+    margin-bottom: 30px;
+    color: #333;
+}
+
+.account-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 30px;
+}
+
+/* Sidebar Navigation */
+.account-sidebar {
+    width: 250px;
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    position: sticky;
+    top: 20px;
+}
+
+.account-sidebar h3 {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.account-sidebar ul {
+    display: flex;
+    flex-direction: column;
+}
+
+.account-sidebar ul li {
+    margin-bottom: 15px;
+}
+
+.account-sidebar ul li a {
+    font-size: 18px;
+    color: #333;
+    padding: 10px;
+    border-radius: 5px;
+    display: block;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.account-sidebar ul li a:hover {
+    background-color: #ff6347;
+    color: white;
+}
+
+/* Account Information Section */
+.account-info {
+    background-color: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    flex: 1;
+    min-width: 300px;
+}
+
+.account-info h3 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.account-info .profile-pic-container {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.account-info .profile-pic-container img {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 4px solid #ff6347;
+}
+
+.account-info .profile-pic-container input[type="file"] {
+    display: none;
+}
+
+.account-info .upload-btn {
+    background-color: #ff6347;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s;
+}
+
+.account-info .upload-btn:hover {
+    background-color: #ff4500;
+}
+
+.account-info p {
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+/* Order History Section */
+.account-orders {
+    background-color: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    flex: 2;
+    min-width: 600px;
+}
+
+.account-orders h3 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.account-orders table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 15px;
+}
+
+.account-orders th,
+.account-orders td {
+    padding: 15px;
+    border: 1px solid #ddd;
+    text-align: left;
+    font-size: 16px;
+}
+
+.account-orders th {
+    background-color: #f4f4f4;
+}
+
+.account-orders tr:hover {
+    background-color: #f0f0f0;
+    cursor: pointer;
+}
+
+/* Tabs for Account Sections */
+.account-tabs {
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+    border-bottom: 2px solid #ddd;
+}
+
+.account-tabs .tab {
+    font-size: 18px;
+    color: #333;
+    padding: 15px 25px;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+    border: none;
+    outline: none;
+}
+
+.account-tabs .tab:hover {
+    background-color: #ff6347;
+    color: white;
+}
+
+.account-tabs .active-tab {
+    background-color: #ff6347;
+    color: white;
+    border-radius: 5px 5px 0 0;
+}
+
+/* Button for Account Settings */
+.account-button {
+    background-color: #ff6347;
+    color: white;
+    padding: 15px 30px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+    text-align: center;
+    transition: background-color 0.3s;
+    margin-top: 20px;
+}
+
+.account-button:hover {
+    background-color: #ff4500;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .account-container {
+        flex-direction: column;
+    }
+
+    .account-sidebar {
+        width: 100%;
+        position: relative;
+        margin-bottom: 30px;
+    }
+
+    .account-info,
+    .account-orders {
+        min-width: 100%;
+    }
+}
+/* Global Styles for Navigation Links */
+header {
+    background-color: #333;
+    padding: 20px;
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 10px 20px;
+    display: inline-block;
+    border-radius: 5px;
+    transition: background-color 0.3s, color 0.3s, transform 0.2s;
+}
+
+nav ul li a:hover {
+    background-color: #ff6347;
+    color: white;
+    transform: scale(1.1);
+}
+
+/* Active Link Styling */
+nav ul li a.active {
+    background-color: #ff6347;
+    color: white;
+}
+
+/* Mobile Menu (Optional for Responsive Navigation) */
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav ul li {
+        margin-bottom: 10px;
+    }
+
+    nav ul li a {
+        font-size: 20px;
+        padding: 15px 25px;
+    }
+}
